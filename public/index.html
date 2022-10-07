@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script data-minify="1" type='text/javascript' src='../src/script/script1.js' id='main-js'></script>
+  <script data-minify="1" type='text/javascript' src='../src/script/script2.js' id='slick-js'></script>
+  <script
+    type="text/javascript">var gform; gform || (document.addEventListener("gform_main_scripts_loaded", function () { gform.scriptsLoaded = !0 }), window.addEventListener("DOMContentLoaded", function () { gform.domLoaded = !0 }), gform = { domLoaded: !1, scriptsLoaded: !1, initializeOnLoaded: function (o) { gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded ? window.addEventListener("DOMContentLoaded", o) : document.addEventListener("gform_main_scripts_loaded", o) }, hooks: { action: {}, filter: {} }, addAction: function (o, n, r, t) { gform.addHook("action", o, n, r, t) }, addFilter: function (o, n, r, t) { gform.addHook("filter", o, n, r, t) }, doAction: function (o) { gform.doHook("action", o, arguments) }, applyFilters: function (o) { return gform.doHook("filter", o, arguments) }, removeAction: function (o, n) { gform.removeHook("action", o, n) }, removeFilter: function (o, n, r) { gform.removeHook("filter", o, n, r) }, addHook: function (o, n, r, t, i) { null == gform.hooks[o][n] && (gform.hooks[o][n] = []); var e = gform.hooks[o][n]; null == i && (i = n + "_" + e.length), gform.hooks[o][n].push({ tag: i, callable: r, priority: t = null == t ? 10 : t }) }, doHook: function (n, o, r) { var t; if (r = Array.prototype.slice.call(r, 1), null != gform.hooks[n][o] && ((o = gform.hooks[n][o]).sort(function (o, n) { return o.priority - n.priority }), o.forEach(function (o) { "function" != typeof (t = o.callable) && (t = window[t]), "action" == n ? t.apply(null, r) : r[0] = t.apply(null, r) })), "filter" == n) return r[0] }, removeHook: function (o, n, t, i) { var r; null != gform.hooks[o][n] && (r = (r = gform.hooks[o][n]).filter(function (o, n, r) { return !!(null != i && i != o.tag || null != t && t != o.priority) }), gform.hooks[o][n] = r) } });</script>
+
+  <script type='text/javascript' id='main-js-extra'>
+    /* <![CDATA[ */
+    var SiteInfo = { "homeUrl": "https:\/\/www.sml.com", "restUrl": "https:\/\/www.sml.com\/wp-json\/", "themeDirectory": "https:\/\/www.sml.com\/wp-content\/themes\/sml" };
+/* ]]> */
+  </script>
+  <script data-minify="1" type='text/javascript'
+    src='https://www.sml.com/wp-content/cache/min/1/wp-content/themes/sml/assets/dist/scripts/main.js?ver=1662492518'
+    id='main-js'></script>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>
